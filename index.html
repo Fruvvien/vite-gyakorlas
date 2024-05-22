@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="container">
+        <section>
+          <form id="teglalapForm">
+            <div class="mb-3">
+              <label for="a" class="form-label">A oldal</label>
+              <input type="number" id="a" name="a" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="b" class="form-label">B oldal</label>
+              <input type="number" id="b" name="b" class="form-control">
+            </div>
+            <button class="btn btn-success" id="teglalapButton">Kész</button>
+          </form>
+        </section>
+        <section>
+          <table class="table" id="table1">
+            <thead>
+              <tr>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">Terület</th>
+                <th scope="col">Kerület</th>
+              </tr>
+            </thead>
+            <tbody id="tbody1">
+             
+            </tbody>
+          </table>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section>
+          <form id="kordinataForm">
+            <div class="mb-3">
+              <label for="x" class="form-label">X kordináta</label>
+              <input type="number" id="x" name="x" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="y" class="form-label">Y kordináta</label>
+              <input type="number" id="y" name="y" class="form-control">
+            </div>
+            <button class="btn btn-success" id="kordinataButton">Kész</button>
+          </form>
+        </section>
+
+        <section>
+          <table class="table" id="table2">
+            <thead>
+              <tr>
+                <th scope="col">X</th>
+                <th scope="col">Y</th>
+                <th scope="col">Távolság az origótól</th>
+              </tr>
+            </thead>
+            <tbody id="tbody2">
+             
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
